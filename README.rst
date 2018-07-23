@@ -102,7 +102,7 @@ Created by Shay Palachy (shay.palachy@gmail.com).
 References
 ==========
 
-.. [CIT2002] M. Q. Pasta, F. Zaidi, C. Rozenblat "Generating online social
+.. [PASTA14] M. Q. Pasta, F. Zaidi, C. Rozenblat "Generating online social
    networks based on socio-demographic attributes", J Complex Netw 2014, 
    2 (4): 475-494.
 
