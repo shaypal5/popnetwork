@@ -6,8 +6,8 @@ import networkx as nx
 
 
 def pasta_zaidi_rozenblat_graph(
-        n, m0, mf, ptf, ptl, lcount=1, gamma=0, th=0.5, attribute_weights=None,
-        seed=None):
+        attr_gen, n, m0, mf, ptf, ptl, lcount=1, gamma=0, th=0.5,
+        attribute_weights=None, seed=None):
     """Returns a random graph according to the Pasta-Zaidi-Rozenblat
     combined demographic and structural similarity attachment model.
 
@@ -17,6 +17,12 @@ def pasta_zaidi_rozenblat_graph(
 
     Parameters
     ----------
+    attr_gen : iterable over dicts
+        An iterable/generator yielding dictionaries of demographic attributes
+        when propmted, mapping string keys to string or numeric values. String-
+        valued attributes are understood to be categorical, while all other
+        attributes are treated as numeric attributes (note that the model
+        treats ordinal attributes similarly).
     n : int
         Number of nodes
     m0 : int
@@ -55,8 +61,8 @@ def pasta_zaidi_rozenblat_graph(
     References
     ----------
     .. [1] M. Q. Pasta, F. Zaidi, C. Rozenblat "Generating online social
-    networks based on socio-demographic attributes", J Complex Netw 2014,
-    2 (4): 475-494.
+    networks based on socio-demographic attributes", Journal of Complex
+    Networks 2014, 2 (4): 475-494.
     """
     if m0 < 0 or m0 > mf or mf >= n:
         raise nx.NetworkXError(

@@ -103,7 +103,7 @@ References
 ==========
 
 .. [PASTA14] M. Q. Pasta, F. Zaidi, C. Rozenblat "Generating online social
-   networks based on socio-demographic attributes", J Complex Netw 2014, 
+   networks based on socio-demographic attributes", Journal of Complex Networks 2014, 
    2 (4): 475-494.
 
 
